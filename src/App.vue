@@ -18,5 +18,6 @@ export default {
     Header,
     Footeer,
   },
+ 
 };
 </script>

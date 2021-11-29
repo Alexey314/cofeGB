@@ -3,22 +3,48 @@
     color="primary lighten-1"
     padless
   >
-    <v-col
-      class="primary lighten-2 py-4 text-center white--text"
-      cols="12"
+    <v-row
+      justify="center"
+      no-gutters
     >
-      {{ new Date().getFullYear() }} — <strong>
-        <v-icon class="mx-5 mb-5">
-          mdi-copyright
-        </v-icon>
-        "Кофеманы"</strong>
-      </v-col>  
+      <v-btn
+        v-for="link in links"
+        :key="link"
+        color="white"
+        text
+        to=""
+        class="my-2"
+      >
+        {{ link }}
+      </v-btn>
+
+      <v-col
+        class="primary lighten-1 py-4 text-center white--text"
+        cols="12"
+      >
+        {{ new Date().getFullYear() }} 
+          <v-icon class="mx-5 mb-5 white--text">
+            mdi-copyright
+          </v-icon>
+          "Кофеманы"
+        </v-col>        
+    </v-row>
+
   </v-footer>
 </template>
 
 <script>
 export default {
-  name: 'footeer',
+  name: 'footer',
+  data: () => ({
+    links: [
+      'Home',
+      'About Us',
+      'Menu',
+      'Team',
+      'Contact Us',
+    ],
+  }), 
 };
 </script>
 

@@ -7,11 +7,11 @@
     width="800"
     height="600"
   >
-    <v-card-header
+    <v-card-title
       class="d-flex justify-center text-h3 mt-7"
     >
       Кофейня "Бодрит"
-    </v-card-header>
+    </v-card-title>
     <v-card-subtitle
       height="400"
       class="d-flex justify-center text--primary align-center flex-grow-1 flex-shrink-0 text-h4 mx-auto"
