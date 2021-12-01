@@ -1,6 +1,6 @@
 <template>
   <v-app-bar app color="primary">
-    <v-btn to="home"> Home </v-btn>
+    <v-btn to="/"> Home </v-btn>
 
     <v-spacer></v-spacer>
 
